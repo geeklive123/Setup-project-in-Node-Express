@@ -2,7 +2,9 @@
 
 function  healthy  (req, res){ 
 	res.status(200).json({
-		status:"oks"
+		"healt": "live",
+		"status": 200,
+		"message": "ok"
 	})
 } 
 
