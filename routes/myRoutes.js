@@ -2,13 +2,12 @@
 const { Router } = require('express'); 
 
 // Local Modules 
-const myController = require('../controllers/myController'); 
+const myController = require('../controllers/healthy'); 
 
 // Initialization 
 const router = Router(); 
 
 // Requests 
-router.get('/', myController.method1); 
-router.post('/', myController.method2); 
+router.get('/', myController.healthy); 
 
 module.exports = router;

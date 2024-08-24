@@ -15,7 +15,7 @@ console.log(PORT);
 app.use(express.json()); 
 
 // Routes will be written here 
-app.use('/route', myRoute); 
+app.use('/health', myRoute); 
 
 // Server Listen Along with Database 
 // connection(in case of data persistence) 
