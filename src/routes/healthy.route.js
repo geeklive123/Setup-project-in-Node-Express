@@ -2,7 +2,8 @@
 const { Router } = require('express'); 
 
 // Local Modules 
-const myController = require('../controllers/healthy'); 
+const myController = require('../controllers/healthy.controllers'); 
+const products= require('../controllers/product.controllers');
 
 // Initialization 
 const router = Router(); 
