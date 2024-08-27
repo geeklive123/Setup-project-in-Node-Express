@@ -1,13 +1,9 @@
 // 3rd Party Modules 
 const { Router } = require('express'); 
-
-
-const products= require('../controllers/product.controllers');
-
-// Initialization 
+const ProductController=require('../controllers/product.controllers')
 const router = Router(); 
 
-// Requests 
-router.get('/', products.get); 
+router.get('/',ProductController.getAllProducts);
+router.get('/:id',ProductController.getIdProduct);
 
 module.exports = router;

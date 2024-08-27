@@ -1,6 +1,7 @@
 require('dotenv/config'); 
 const express = require('express'); 
 const myRoute = require('./routes/healthy.route');
+const productRoute=require('./routes/products.route')
 const app = express(); 
 const PORT = process.env.PORT; 
 
@@ -8,7 +9,7 @@ const PORT = process.env.PORT;
 
 app.use(express.json()); 
 app.use('/health', myRoute); 
-
+app.use('/products',productRoute)
 
 
 
